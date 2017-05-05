@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      >
+    <h:body>
+        <table class="book-table">
+          <tr>
+            <th>Book No</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+          <tbody>
+            <ui:repeat var="o" value="#{book.bookList}" varStatus="status">
+              <h:panelGroup rendered="#{status.even}">
+                <tr>
+                  <td>#{o.bookNo}</td>
+                  <td>#{o.productName}</td>
+                  <td>#{o.price}</td>
+                  <td>#{o.qty}</td>
+                </tr>
+              </h:panelGroup>
+              <h:panelGroup rendered="#{status.odd}">
+                <tr>
+                  <td>#{o.bookNo}</td>
+                  <td>#{o.productName}</td>
+                  <td>#{o.price}</td>
+                  <td>#{o.qty}</td>
+                </tr>
+              </h:panelGroup>
+            </ui:repeat>
+          </tbody>
+        </table>
+    </h:body>
+</html>

@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-4-26, 22:29:57
+    Author     : Administrator
+*/
+
+.book-table-header{
+  bbook-bottom:1px solid #BBB;
+  padding:16px;
+}
+
+.book-table-odd-row{
+  bbook-top:1px solid #BBB;
+}
+
+.book-table-even-row{
+  bbook-top:1px solid #BBB;
+}

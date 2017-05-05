@@ -1,0 +1,12 @@
+.book-table-header{
+  bbook-bottom:1px solid #BBB;
+  padding:16px;
+}
+
+.book-table-odd-row{
+  bbook-top:1px solid #BBB;
+}
+
+.book-table-even-row{
+  bbook-top:1px solid #BBB;
+}
